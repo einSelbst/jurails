@@ -20,7 +20,7 @@ gem 'sqlite3'
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
-# gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 
 # Bundle gems for the local environment. Make sure to
@@ -29,3 +29,15 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+
+# http://relishapp.com/rspec/rspec-rails/v/2-4
+group :test, :development do
+gem "rspec-rails", "~> 2.5"
+end
+
+#https://github.com/brynary/webrat/wiki
+group :test do
+gem "rspec-rails", "~> 2.5"
+gem 'webrat'
+end
