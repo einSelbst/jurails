@@ -40,4 +40,5 @@ end
 group :test do
 gem "rspec-rails", "~> 2.5"
 gem 'webrat'
+gem 'spork', '~> 0.9.0.rc4'
 end
